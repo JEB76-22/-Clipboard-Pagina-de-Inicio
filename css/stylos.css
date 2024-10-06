@@ -1,0 +1,64 @@
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%,33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --padding-container: 80px 0;/*80 arriba y abajo 0 alos lados*/
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* header hero */
+.container{
+    width: 90%;
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.hero{
+    --padding-container: 120px 0 80px;
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.hero__img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4.5em;
+}
+.hero__title{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+}
+.hero_paragraph{
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+.buttons{
+    margin-top: 2.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+}
+.buttons__cta{
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 1em 0;
+    font-weight: 600;
+    box-shadow: 0 0 10px -5px var(--Strong-Cyan);
+}
+.buttons__cta--blue{
+    box-shadow: 0 0 10px -5px var(--Light-Blue);
+    background-color: var(--Light-Blue);
+}
